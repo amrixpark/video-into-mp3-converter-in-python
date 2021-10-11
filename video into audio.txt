@@ -1,0 +1,11 @@
+#convert video into audio | credit goes to coding with evan
+
+import moviepy.editor
+from tkinter.filedialog import *
+
+video=askopenfilename()
+video=moviepy.editor.VideoFileClip(video)
+audio=video.audio
+
+audio.write_audiofile(r"E:\mp3 python project\Free Cinematic Background _ Free Stock Footage _ Free Video Loop 111.mp3")
+print("song is converted!")
